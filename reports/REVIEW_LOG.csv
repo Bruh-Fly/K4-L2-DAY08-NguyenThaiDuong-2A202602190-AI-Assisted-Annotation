@@ -1,0 +1,49 @@
+round,frame_id,object,action,rule_or_reason
+1,frame_0099.jpg,nhiều xe trong vùng đường tối,added,Đường quá tối khiến AI không detect được nhiều xe nên cần bổ sung khung.
+1,frame_0107.jpg,các xe bị bỏ sót,added,Ảnh tối và AI bỏ sót nhiều xe nên cần thêm các khung còn thiếu.
+1,frame_0182.jpg,xe ở khu vực thiếu sáng,added,Ánh sáng yếu làm các xe không được detect nên cần bổ sung khung.
+1,frame_0187.jpg,nhiều xe trên mặt đường tối,added,Đường tối khiến khả năng detect giảm và còn sót nhiều xe.
+1,frame_0227.jpg,nhiều xe bị bỏ sót và khung sai,edited,Đường tối khiến AI detect thiếu xe và một số khung không ôm đúng thân xe nên cần bổ sung và chỉnh sửa.
+1,frame_0270.jpg,nhiều xe không được detect,added,Ảnh có độ sáng thấp khiến AI bỏ sót nhiều xe cần được gán nhãn.
+1,frame_0312.jpg,xe trong khu vực tối,added,Đường tối làm xe khó nhận diện và AI không detect được đầy đủ.
+1,frame_0326.jpg,nhiều xe bị bỏ sót,added,AI không phát hiện được nhiều xe do điều kiện ánh sáng quá tối.
+1,frame_0331.jpg,nhiều xe bị bỏ sót và khung sai,edited,AI không detect được đầy đủ xe trong vùng tối và một số khung bị lệch nên cần bổ sung và chỉnh sửa.
+1,frame_0369.jpg,các xe bị AI bỏ sót,added,Độ sáng thấp làm AI không detect được nhiều xe trong ảnh.
+1,frame_0380.jpg,nhiều xe ở khu vực tối,added,Ánh sáng trên mặt đường quá tối khiến nhiều xe bị bỏ sót.
+1,frame_0392.jpg,xe không được phát hiện,added,Do đường tối nên AI không detect được đầy đủ các xe và cần thêm khung.Bước 16. Kiểm tra rồi nộp
+Trong PowerShell, ở thư mục dự án:
+
+python tools/check_submission.py
+
+Sửa mọi dòng lỗi nó in ra, rồi chạy lại đến khi không còn lỗi.
+
+Mở GitHub Desktop. Commit to main → Push origin.
+
+Mở repo của bạn trên GitHub và kiểm tra repo đang Public. Trên repo phải có:
+
+labels/round1/
+outputs/metrics_round0.json và outputs/metrics_round1.json
+outputs/selection_round1.csv và outputs/selection_round1.jpg
+outputs/compare_round0.jpg và outputs/compare_round1.jpg
+outputs/round1_diff.json và outputs/round1_diff.md
+reports/BLIND_SCAN.md, reports/blind_lock.json, reports/REVIEW_LOG.csv
+reports/SELECTION.md, reports/rounds_table.md, reports/REPORT.md
+Không đưa lên GitHub: day8_data.zip, thư mục to_label, các file zip. Giữ chúng trên máy.Bước 16. Kiểm tra rồi nộp
+Trong PowerShell, ở thư mục dự án:
+
+python tools/check_submission.py
+
+Sửa mọi dòng lỗi nó in ra, rồi chạy lại đến khi không còn lỗi.
+
+Mở GitHub Desktop. Commit to main → Push origin.
+
+Mở repo của bạn trên GitHub và kiểm tra repo đang Public. Trên repo phải có:
+
+labels/round1/
+outputs/metrics_round0.json và outputs/metrics_round1.json
+outputs/selection_round1.csv và outputs/selection_round1.jpg
+outputs/compare_round0.jpg và outputs/compare_round1.jpg
+outputs/round1_diff.json và outputs/round1_diff.md
+reports/BLIND_SCAN.md, reports/blind_lock.json, reports/REVIEW_LOG.csv
+reports/SELECTION.md, reports/rounds_table.md, reports/REPORT.md
+Không đưa lên GitHub: day8_data.zip, thư mục to_label, các file zip. Giữ chúng trên máy.
